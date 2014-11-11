@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--cpus", 2]
   end
 
-  config.vm.synced_folder "./application/baminate.capifony", "/vagrant", type: "nfs", mount_options: ['rw', 'vers=3', 'tcp', 'fsc']
+  config.vm.synced_folder "./application/kladise.net", "/vagrant", type: "nfs", id: "vagrant-root"
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "ansible/playbook.yml"

@@ -30,10 +30,10 @@
     name=wget
     state=present
 
-- name: Install cachefilesd
-  yum:
-    name=cachefilesd
-    state=present
+#- name: Install cachefilesd
+#  yum:
+#    name=cachefilesd
+#    state=present
 
-- name: Cachefilesd configuration
-  shell: echo "RUN=yes" > /etc/default/cachefilesd
+#- name: Cachefilesd configuration
+#  shell: echo "RUN=yes" > /etc/default/cachefilesd
