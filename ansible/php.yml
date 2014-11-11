@@ -1,0 +1,25 @@
+- name: RPM
+  command: rpm -Uvh {{ item }}
+  with_items:
+    - https://mirror.webtatic.com/yum/el6/latest.rpm
+
+- name: Install PHP5.4
+  yum:
+    name={{ item }}
+    state=present
+  with_items:
+    - php54w
+    - php54w-mysql
+    - php54w-common
+    - php54w-xml
+    - php54w-bcmath
+    - php54w-pecl-apc
+    - php54w-pecl-imagick
+    - php54w-process
+    - php54w-intl
+
+- name: PHP Date Config
+  shell: echo "date.timezone='UTC'" >> /etc/php.ini
+
+- name: PHP APC Config
+  shell: echo "apc.shm_size = 64" >> /etc/php.ini

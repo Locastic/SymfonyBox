@@ -1,0 +1,26 @@
+- hosts: all
+  remote_user: vagrant
+  sudo: yes
+  vars_files:
+    - settings.yml
+
+  tasks:
+    - include: apache.yml
+
+    - include: mysql.yml
+
+    - include: php.yml
+
+#    - include: zsh.yml
+
+    - include: misc.yml
+
+    - include: apache_vhosts.yml
+
+    - include: elastic_search.yml
+
+    - include: node.yml
+
+#    - include: ruby.yml
+
+    - include: hhvm.yml

@@ -1,0 +1,10 @@
+- name: Add hop repo
+  get_url: url=http://www.hop5.in/yum/el6/hop5.repo  dest=/etc/yum.repos.d/hop5.repo
+
+- name: YUM clean all
+  command: yum clean all
+
+- name: Install HHVM
+  yum:
+    name=hhvm
+    state=present
