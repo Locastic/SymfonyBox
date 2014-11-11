@@ -25,7 +25,10 @@ Download and Install Vagrant:
 * CentOS 6.5
 * LAMP with PHP 5.4.33
 * Composer
-* ZSH with Oh My ZSH
+* HHVM
+* Nodejs, NPM, LESS
+* ElasticSearch
+* TMUX
 
 ## Installation
 
