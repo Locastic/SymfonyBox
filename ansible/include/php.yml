@@ -1,0 +1,17 @@
+
+
+- name: Install PHP5.4
+  yum:
+    name={{ item }}
+    state=present
+    enablerepo=remi
+  with_items:
+    - php
+    - php-intl
+    - php-apc
+
+- name: PHP Date Config
+  shell: echo "date.timezone='UTC'" >> /etc/php.ini
+
+- name: PHP APC Config
+  shell: echo "apc.shm_size = 256" >> /etc/php.ini

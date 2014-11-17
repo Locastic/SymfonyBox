@@ -1,0 +1,25 @@
+- name: Add RPMs
+  command: rpm -Uvh {{ item }}
+  with_items:
+    - http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+
+- name: UPGRADE all packages
+  yum:
+    name=*
+    state=latest
+    enablerepo=remi
+
+- name: Install Apache
+  yum:
+    name={{ item }}
+    state=present
+    enablerepo=remi
+  with_items:
+    - nfs-utils
+    - nfs-utils-lib
+    - httpd
+
+- name: Ensure httpd is running
+  service:
+    name=httpd
+    state=started

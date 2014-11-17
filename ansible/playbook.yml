@@ -2,25 +2,25 @@
   remote_user: vagrant
   sudo: yes
   vars_files:
-    - settings.yml
+    - vars/settings.yml
 
   tasks:
-    - include: apache.yml
+    - include: include/apache.yml
 
-    - include: mysql.yml
+    - include: include/mysql.yml
 
-    - include: php.yml
+    - include: include/php.yml
 
-#    - include: zsh.yml
-
-    - include: misc.yml
-
-    - include: apache_vhosts.yml
-
-    - include: elastic_search.yml
-
-    - include: node.yml
-
-#    - include: ruby.yml
-
-#    - include: hhvm.yml
+#    - include: include/zsh.yml
+#
+#    - include: include/misc.yml
+#
+#    - include: include/apache_vhosts.yml
+#
+#    - include: include/elastic_search.yml
+#
+#    - include: include/node.yml
+#
+#    - include: include/ruby.yml
+#
+#    - include: include/hhvm.yml
