@@ -1,13 +1,14 @@
 - name: Add RPMs
   command: rpm -Uvh {{ item }}
   with_items:
+    - http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
     - http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 
-- name: UPGRADE all packages
-  yum:
-    name=*
-    state=latest
-    enablerepo=remi
+#- name: UPGRADE all packages
+#  yum:
+#    name=*
+#    state=latest
+#    enablerepo=remi
 
 - name: Install Apache
   yum:
