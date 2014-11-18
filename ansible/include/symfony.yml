@@ -1,0 +1,17 @@
+- name: Changing owner for srv
+  shell: chown vagrant:vagrant /srv
+
+- name: Create cache and log dirs
+  shell: mkdir {{ item }}
+  with_items:
+    - cache
+    - logs
+
+- name: Make directory writable
+  shell: chmod -R 777 /srv
+
+- name: Install git
+  yum:
+    name=git
+    state=present
+    enablerepo=remi
