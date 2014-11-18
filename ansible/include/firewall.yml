@@ -1,0 +1,6 @@
+- name: Disable firewall
+  shell: {{ item }}
+  with_items:
+    - service iptables save
+    - service iptables stop
+    - chkconfig iptables off

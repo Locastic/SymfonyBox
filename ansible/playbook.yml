@@ -16,6 +16,8 @@
     - include: include/misc.yml
 
     - include: include/apache_vhosts.yml
+
+    - include: include/firewall.yml
 #
 #    - include: include/elastic_search.yml
 #
