@@ -7,9 +7,10 @@
     - npm
 
 - name: Node.js | Install packages
-  yum:
+  npm:
     name={{ item }}
     state=present
+  global: yes
   with_items:
     - uglify-js
-    - less
+    - less@1.7.5

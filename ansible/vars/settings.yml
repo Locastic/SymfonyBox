@@ -7,3 +7,5 @@ innodb_file_per_table: 'innodb_file_per_table'
 # mysql
 mysql_root_password: 'root'
 server_hostname: localhost
+
+# root password: puppet

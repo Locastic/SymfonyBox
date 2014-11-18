@@ -11,18 +11,18 @@
 
     - include: include/php.yml
 
-#    - include: include/zsh.yml
+    - include: include/zsh.yml
 
     - include: include/misc.yml
 
     - include: include/apache_vhosts.yml
 
     - include: include/firewall.yml
-#
+
 #    - include: include/elastic_search.yml
-#
-#    - include: include/node.yml
-#
+
+    - include: include/node.yml
+
 #    - include: include/ruby.yml
 #
 #    - include: include/hhvm.yml
