@@ -7,8 +7,14 @@
     - cache
     - logs
 
-- name: Make directory writable
-  shell: chmod -R 777 /srv
+- name: Make cache and log writable
+  shell: chmod -R 777 {{ item }}
+  with_items:
+    - /srv/cache
+    - /srv/logs
+
+- name: Set correct permission to vagrant
+  shell: chmod -R 755 /vagrant
 
 - name: Install git
   yum:
