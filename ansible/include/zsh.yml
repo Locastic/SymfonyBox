@@ -1,3 +1,9 @@
+- name: Install git
+  yum:
+    name=git
+    state=present
+    enablerepo=remi
+
 - name: Install ZSH
   yum:
     name=zsh

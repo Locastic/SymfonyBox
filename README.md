@@ -35,5 +35,13 @@ Download and Install Vagrant:
     git clone https://github.com/KrunoKnego/SymfonyVagrantAnsibleBox.git
     vagrant up
 
+## Problems
+
+Sometimes there might be a problem with NFS and then delete .vagrant folder
+
+If problem still occurs repeat vboxnet up & down for all you vbox interfaces.
+
+This problem is documented in https://github.com/mitchellh/vagrant/issues/1941
+
 
 

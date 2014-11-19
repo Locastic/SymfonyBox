@@ -49,3 +49,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 alias getcomposer="curl -sS https://getcomposer.org/installer | php"
 alias pac="php app/console"
+
+# ADD HHVM support

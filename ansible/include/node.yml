@@ -10,7 +10,7 @@
   npm:
     name={{ item }}
     state=present
-  global: yes
+    global=yes
   with_items:
     - uglify-js
     - less@1.7.5

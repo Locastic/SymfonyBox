@@ -16,8 +16,3 @@
 - name: Set correct permission to vagrant
   shell: chmod -R 755 /vagrant
 
-- name: Install git
-  yum:
-    name=git
-    state=present
-    enablerepo=remi

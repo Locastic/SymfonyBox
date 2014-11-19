@@ -26,3 +26,5 @@
 #    - include: include/ruby.yml
 #
 #    - include: include/hhvm.yml
+
+    - include: include/nfs_tuning.yml
