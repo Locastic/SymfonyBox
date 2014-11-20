@@ -3,6 +3,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "puppetlabs/centos-6.5-64-nocm"
+  config.vm.box_url = "https://vagrantcloud.com/puppetlabs/centos-6.5-64-nocm"
 
   config.vm.network :private_network, ip: "192.168.12.34"
   config.ssh.forward_agent = true
@@ -12,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |v| 
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--memory", 1024]
-    v.customize ["modifyvm", :id, "--name", "bla"]
+    v.customize ["modifyvm", :id, "--name", "loca-vm"]
     v.customize ["modifyvm", :id, "--ioapic", "on"]
     v.customize ["modifyvm", :id, "--cpus", 2]
   end
