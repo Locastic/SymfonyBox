@@ -1,4 +1,4 @@
 .idea
 .vagrant
-.application/*
-!.application/test.app
+application/*
+!application/test.app
