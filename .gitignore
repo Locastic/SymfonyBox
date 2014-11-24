@@ -1,4 +1,4 @@
-./idea
-./vagrant
-./application
-!./application/test.app
+.idea
+.vagrant
+.application
+!.application/test.app
