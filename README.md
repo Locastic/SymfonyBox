@@ -41,13 +41,3 @@ You can easily start a project by running vagrantee.sh script.
 All details can be found on the following 
 [link](https://github.com/vagrantee/sandbox-symfony)
 
-## Problems
-
-Sometimes there might be a problem with NFS and then delete .vagrant folder
-
-If problem still occurs repeat vboxnet up & down for all you vbox interfaces.
-
-This problem is documented in https://github.com/mitchellh/vagrant/issues/1941
-
-
-
