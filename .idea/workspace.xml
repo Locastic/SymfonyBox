@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27a958bb-3616-4833-8729-83b91a74b46b" name="Default" comment="" />
+    <list default="true" id="27a958bb-3616-4833-8729-83b91a74b46b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Vagrant.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/action_provision" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/action_set_name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/index_uuid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/synced_folders" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/files/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/files/80.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/files/8000.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/files/bashrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/files/zshrc.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/handlers/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/apache.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/apache_vhosts.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/elastic_search.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/firewall.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/hhvm.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/misc.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/mysql.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/nfs_tuning.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/node.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/php.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/ruby.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/symfony.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/include/zsh.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/playbook.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/templates/root-my-cnf.j2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ansible/vars/settings.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/instametrix" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/test.app/web/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vagrantee.sh" afterPath="" />
+    </list>
     <ignored path="Vagrant.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -38,8 +81,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5063291" vertical-offset="0" max-vertical-offset="855">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.5063291" vertical-offset="45" max-vertical-offset="885">
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -370,8 +413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5063291" vertical-offset="0" max-vertical-offset="855">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.5063291" vertical-offset="45" max-vertical-offset="885">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding />
         </state>
       </provider>
