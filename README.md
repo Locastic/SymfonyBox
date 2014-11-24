@@ -37,7 +37,9 @@ Download and Install Vagrant:
 
 ## How to start a project
 
-
+You can easily start a project by running vagrantee.sh script.
+All details can be found on the following 
+[link](https://github.com/vagrantee/sandbox-symfony)
 
 ## Problems
 
