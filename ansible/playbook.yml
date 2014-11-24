@@ -19,12 +19,12 @@
 
     - include: include/firewall.yml
 
-#    - include: include/elastic_search.yml
+    - include: include/elastic_search.yml
 
     - include: include/node.yml
 
 #    - include: include/ruby.yml
-#
-#    - include: include/hhvm.yml
 
-    - include: include/nfs_tuning.yml
+    - include: include/hhvm.yml
+
+#    - include: include/nfs_tuning.yml

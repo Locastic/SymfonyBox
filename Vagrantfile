@@ -5,7 +5,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "puppetlabs/centos-6.5-64-nocm"
   config.vm.box_url = "https://vagrantcloud.com/puppetlabs/centos-6.5-64-nocm"
 
-  config.vm.network :private_network, ip: "192.168.12.34"
+  config.vm.network :private_network, ip: "192.168.19.50"
   config.ssh.forward_agent = true
 
   config.vm.provision :shell, inline: "if [ ! $(grep single-request-reopen /etc/sysconfig/network) ]; then echo RES_OPTIONS=single-request-reopen >> /etc/sysconfig/network && service network restart; fi"
@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--cpus", 2]
   end
 
-  config.vm.synced_folder "./application/bamin", "/vagrant", type: "nfs"
+  config.vm.synced_folder "./application/test.app", "/vagrant", type: "nfs"
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "ansible/playbook.yml"
