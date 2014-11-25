@@ -6,7 +6,7 @@
 - name: Elasticsearch rpm
   command: rpm -Uvh {{ item }}
   with_items:
-    - https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.10.noarch.rpm
+    - https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.0.noarch.rpm
 
 - name: Start elasticsearch
   command: chkconfig {{ item }} on
