@@ -12,6 +12,7 @@
     - php-pdo
     - php-mysql
     - php-soap
+    - php-imagick
 
 - name: PHP Date Config
   shell: echo "date.timezone='UTC'" >> /etc/php.ini
