@@ -1,5 +1,3 @@
-
-
 - name: Install PHP5.4
   yum:
     name={{ item }}
@@ -10,9 +8,9 @@
     - php-intl
     - php-apc
     - php-pdo
-    - php-mysql
     - php-soap
     - php-imagick
+    - php-mysqlnd
 
 - name: PHP Date Config
   shell: echo "date.timezone='UTC'" >> /etc/php.ini

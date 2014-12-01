@@ -1,0 +1,37 @@
+- name: Blackfire Install pygpgme
+  yum:
+    name={{ item }}
+    state=present
+    enablerepo=remi
+  with_items:
+    - pygpgme
+
+- name: Blackfire repo
+  shell: curl "http://packages.blackfire.io/fedora/blackfire.repo" | sudo tee /etc/yum.repos.d/blackfire.repo
+
+- name: Install Blackfire agent
+  yum:
+    name={{ item }}
+    state=present
+    enablerepo=remi
+  with_items:
+    - blackfire-agent
+
+- name: Blackfire agent register
+  shell: blackfire-agent --register
+
+#SERVER_ID = 5eff5f3b-5d7b-4758-977c-8bd0a0e3332f
+#SERVER_TOKEN = 3e194fe4716a4dc0e5612cc44a7d40a1269752ab49e7815ab818a44ed801f3ec
+
+- name: Blackfire agent restart
+  shell: blackfire-agent restart
+
+- name: Install Blackfire php
+  yum:
+    name={{ item }}
+    state=present
+    enablerepo=remi
+  with_items:
+    - blackfire-php
+
+# Restart apache

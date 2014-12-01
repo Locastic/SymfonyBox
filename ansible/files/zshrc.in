@@ -49,4 +49,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 alias getcomposer="curl -sS https://getcomposer.org/installer | php"
 alias pac="php app/console"
+alias pec="php ezpublish/console"
 alias composer="hhvm /usr/local/bin/composer"
+alias dev="php app/console --env=dev"
+alias prod="php app/console --env=prod"

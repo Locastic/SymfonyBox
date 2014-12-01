@@ -21,6 +21,9 @@
     state=present
     enablerepo=remi
 
+- name: PHPMyAdmin timeout fix
+  shell: echo "$cfg['ExecTimeLimit'] = 0;" >> etc/phpMyAdmin/config.inc.php
+
 - name: Install TMUX
   yum:
     name=tmux
@@ -35,6 +38,6 @@
 #  yum:
 #    name=cachefilesd
 #    state=present
-
+#
 #- name: Cachefilesd configuration
 #  shell: echo "RUN=yes" > /etc/default/cachefilesd

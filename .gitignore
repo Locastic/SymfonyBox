@@ -2,4 +2,4 @@
 .vagrant
 application/*
 !application/test.app
-Vagranfile.bak
+Vagrantfile.bak
