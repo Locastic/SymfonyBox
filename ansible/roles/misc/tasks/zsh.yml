@@ -1,9 +1,4 @@
-- name: Install git
-  yum:
-    name=git
-    state=present
-    enablerepo=remi
-
+---
 - name: Install ZSH
   yum:
     name=zsh
@@ -19,7 +14,7 @@
   file: path=/home/vagrant/conf/ state=directory owner=vagrant
 
 - name: deploy .zshrc
-  template: src=files/zshrc.in dest=/home/vagrant/conf/zshrc owner=vagrant
+  template: src=zshrc.in dest=/home/vagrant/conf/zshrc owner=vagrant
 
 - name: symlink zshrc
   file: path=/home/vagrant/.zshrc src=/home/vagrant/conf/zshrc state=link owner=vagrant

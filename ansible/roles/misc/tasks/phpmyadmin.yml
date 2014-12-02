@@ -1,0 +1,9 @@
+---
+- name: Install PHPMyAdmin
+  yum:
+    name=phpmyadmin
+    state=present
+    enablerepo=remi
+
+- name: PHPMyAdmin timeout fix
+  shell: echo "$cfg['ExecTimeLimit'] = 0;" >> /etc/phpMyAdmin/config.inc.php

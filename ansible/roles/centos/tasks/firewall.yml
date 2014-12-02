@@ -1,3 +1,4 @@
+---
 - name: Disable firewall
   shell: "{{ item }}"
   with_items:

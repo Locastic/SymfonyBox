@@ -29,6 +29,13 @@ Download and Install Vagrant:
 * Nodejs, NPM, LESS
 * ElasticSearch
 * TMUX
+* Blackfire
+* Git
+* Java
+* NodeJs
+* PhpMyAdmin
+* Wget
+* ZSH
 
 ## Installation
 
@@ -41,3 +48,7 @@ You can easily start a project by running vagrantee.sh script.
 All details can be found on the following 
 [link](https://github.com/vagrantee/sandbox-symfony)
 
+## TODO
+
+Fix HHVM
+Optimize nfs

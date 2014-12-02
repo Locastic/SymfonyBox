@@ -1,3 +1,4 @@
+---
 # my.cnf
 mysql_max_allowed_packet: '128M'
 mysql_character_set_server: 'utf8'

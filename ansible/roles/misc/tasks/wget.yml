@@ -1,0 +1,5 @@
+---
+- name: Install WGET
+  yum:
+    name=wget
+    state=present

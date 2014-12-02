@@ -1,0 +1,5 @@
+---
+- name: Install java
+  yum:
+    name=java-1.7.0-openjdk
+    state=present

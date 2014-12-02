@@ -1,0 +1,11 @@
+---
+- name: Check if single-request-reopen exists
+  shell: grep single-request-reopen /etc/sysconfig/network
+  register: grep_check
+  ignore_errors: true
+
+- name: Add if single-request-reopen doesn't exists
+  shell: echo RES_OPTIONS=single-request-reopen >> /etc/sysconfig/network
+  when: grep_check|failed
+  notify: restart network
+

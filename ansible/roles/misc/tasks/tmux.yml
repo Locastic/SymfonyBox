@@ -1,0 +1,5 @@
+---
+- name: Install TMUX
+  yum:
+    name=tmux
+    state=present

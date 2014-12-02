@@ -1,10 +1,12 @@
+---
 - name: Apache Install Virtual Hosts
   template:
     src={{ item.src }}
     dest={{ item.dest }}
   with_items:
-    - { src: 'files/80.conf', dest: '/etc/httpd/conf.d/80.conf' }
-    - { src: 'files/8000.conf', dest: '/etc/httpd/conf.d/8000.conf' }
+    - { src: '80.conf', dest: '/etc/httpd/conf.d/80.conf' }
+    - { src: '8000.conf', dest: '/etc/httpd/conf.d/8000.conf' }
+  notify: restart apache
 
 - name: Apache Remove Old Virtual Host
   file:
@@ -13,8 +15,4 @@
   with_items:
     - /etc/httpd/conf.d/welcome.conf
     - /etc/httpd/conf.d/phpMyAdmin.conf
-
-- name: Restart apache
-  service:
-    name=httpd
-    state=restarted
+  notify: restart apache

@@ -1,8 +1,4 @@
-- name: Install java
-  yum:
-    name=java-1.7.0-openjdk
-    state=present
-
+---
 - name: Elasticsearch rpm
   command: rpm -Uvh {{ item }}
   with_items:

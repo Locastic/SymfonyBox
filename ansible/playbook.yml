@@ -1,28 +1,15 @@
+---
 - hosts: all
   remote_user: vagrant
   sudo: yes
+  gather_facts: yes
   vars_files:
     - vars/settings.yml
 
-  tasks:
-    - include: include/apache.yml
-
-    - include: include/mysql.yml
-
-    - include: include/php.yml
-
-    - include: include/zsh.yml
-
-    - include: include/misc.yml
-
-    - include: include/apache_vhosts.yml
-
-    - include: include/firewall.yml
-
-    - include: include/elastic_search.yml
-
-    - include: include/node.yml
-
-    - include: include/hhvm.yml
-
-#    - include: include/nfs_tuning.yml
+  roles:
+    - apache
+    - mysql
+    - php
+    - misc
+    - symfony
+    - centos

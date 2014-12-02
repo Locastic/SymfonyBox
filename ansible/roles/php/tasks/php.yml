@@ -1,3 +1,4 @@
+---
 - name: Install PHP5.4
   yum:
     name={{ item }}
@@ -18,7 +19,7 @@
 - name: PHP APC Config
   shell: echo "apc.shm_size = 256M" >> /etc/php.ini
 
-- name: Increase phpmyadmin upload size
+- name: Increase PHP upload size
   shell: echo "{{ item }}" >> /etc/php.ini
   with_items:
     - upload_max_filesize = 512M

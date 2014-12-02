@@ -1,0 +1,3 @@
+---
+- include: symfony.yml
+#  - include: blackfire.yml

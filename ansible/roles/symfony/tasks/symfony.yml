@@ -1,0 +1,9 @@
+---
+- name: Create cache and log dirs
+  shell: mkdir {{ item }}
+  with_items:
+    - /srv/cache
+    - /srv/logs
+
+- name: Changing owner for srv
+  shell: chown -R apache:apache /srv
