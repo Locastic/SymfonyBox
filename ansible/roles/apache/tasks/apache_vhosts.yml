@@ -14,7 +14,6 @@
     state=absent
   with_items:
     - /etc/httpd/conf.d/welcome.conf
-    - /etc/httpd/conf.d/phpMyAdmin.conf
   notify: restart apache
 
 - name: Remove old httpd.conf

@@ -1,0 +1,5 @@
+---
+- name: Start services
+  shell: chkconfig {{ item }}
+  with_items:
+    - rpcbind on

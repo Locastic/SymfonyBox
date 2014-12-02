@@ -17,3 +17,7 @@
     - rpcidmapd off
     - smartd off
     - ip6tables off
+    - haldaemon off
+    - messagebus off
+    - mdmonitor off
+    - irqbalance off

@@ -2,3 +2,4 @@
 - include: firewall.yml
 - include: ip.yml
 - include: services.yml
+- include: update.yml
