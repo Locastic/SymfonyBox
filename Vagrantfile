@@ -17,9 +17,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--cpus", 2]
   end
 
-  config.vm.synced_folder "./application/test.app", "/vagrant", type: "nfs"
   # FSC is for cachefilesd
-  #, mount_options: ['rw', 'vers=3', 'udp', 'async', 'fsc']
+  config.vm.synced_folder "./application/test.app", "/vagrant", type: "nfs" , mount_options: ['fsc']
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "ansible/playbook.yml"

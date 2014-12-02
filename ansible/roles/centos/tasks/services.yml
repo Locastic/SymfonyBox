@@ -1,0 +1,19 @@
+---
+- name: Disable services
+  shell: chkconfig {{ item }}
+  with_items:
+    - abrt-ccpp off
+    - abrt-oops off
+    - abrtd off
+    - acpid off
+    - auditd off
+    - postfix off
+    - udev-post off
+    - atd off
+    - cpuspeed off
+    - netfs off
+    - nfslock off
+    - rpcgssd off
+    - rpcidmapd off
+    - smartd off
+    - ip6tables off
