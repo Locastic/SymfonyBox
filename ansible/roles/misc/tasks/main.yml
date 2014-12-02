@@ -10,3 +10,4 @@
 - include: tmux.yml
 - include: vim.yml
 - include: wget.yml
+- include: cachefilesd.yml

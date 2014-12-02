@@ -1,11 +1,16 @@
 ---
-- name: Check if single-request-reopen exists
-  shell: grep single-request-reopen /etc/sysconfig/network
-  register: grep_check
-  ignore_errors: true
-
-- name: Add if single-request-reopen doesn't exists
-  shell: echo RES_OPTIONS=single-request-reopen >> /etc/sysconfig/network
-  when: grep_check|failed
+- name: Remove old network
+  file:
+    path={{ item }}
+    state=absent
+  with_items:
+    - /etc/sysconfig/network
   notify: restart network
 
+- name: Add new network
+  template:
+    src={{ item.src }}
+    dest={{ item.dest }}
+  with_items:
+    - { src: 'network', dest: '/etc/sysconfig/network' }
+  notify: restart network

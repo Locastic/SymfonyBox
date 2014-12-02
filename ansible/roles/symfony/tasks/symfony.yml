@@ -6,4 +6,4 @@
     - /srv/logs
 
 - name: Changing owner for srv
-  shell: chown -R apache:apache /srv
+  shell: chown -R vagrant:vagrant /srv

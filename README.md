@@ -36,6 +36,7 @@ Download and Install Vagrant:
 * PhpMyAdmin
 * Wget
 * ZSH
+* Cachefilesd
 
 ## Installation
 
@@ -50,5 +51,4 @@ All details can be found on the following
 
 ## TODO
 
-Fix HHVM
-Optimize nfs
+* Fix HHVM

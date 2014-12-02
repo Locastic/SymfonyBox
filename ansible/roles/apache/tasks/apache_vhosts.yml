@@ -16,3 +16,19 @@
     - /etc/httpd/conf.d/welcome.conf
     - /etc/httpd/conf.d/phpMyAdmin.conf
   notify: restart apache
+
+- name: Remove old httpd.conf
+  file:
+    path={{ item }}
+    state=absent
+  with_items:
+    - /etc/httpd/conf/httpd.conf
+  notify: restart apache
+
+- name: Add new httpd.conf
+  template:
+    src={{ item.src }}
+    dest={{ item.dest }}
+  with_items:
+    - { src: 'httpd.conf', dest: '/etc/httpd/conf/httpd.conf' }
+  notify: restart apache
