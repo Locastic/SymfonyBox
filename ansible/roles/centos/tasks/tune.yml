@@ -1,0 +1,28 @@
+---
+  - name: Set the value for the running system
+    shell: sh -c 'echo 0 > /proc/sys/vm/swappiness'
+
+  - name: Backup sysctl.conf
+    shell: cp -p /etc/sysctl.conf /etc/sysctl.conf.`date +%Y%m%d-%H:%M`
+
+  - name: Set the value in /etc/sysctl.conf so it stays after reboot.
+    shell: "{{ item }}"
+    with_items:
+      - sh -c 'echo '' >> /etc/sysctl.conf'
+      - sh -c 'echo '#Set swappiness to 0 to avoid swapping' >> /etc/sysctl.conf'
+      - sh -c 'echo 'vm.swappiness = 0' >> /etc/sysctl.conf'
+
+  - name: Disable THP on a running system
+    shell: "{{ item }}"
+    with_items:
+      - sh -c 'echo never > /sys/kernel/mm/transparent_hugepage/enabled'
+      - sh -c 'echo never > /sys/kernel/mm/transparent_hugepage/defrag'
+
+  - name: Backup rc.local
+    shell: cp -p /etc/rc.local /etc/rc.local.`date +%Y%m%d-%H:%M`#
+
+  - name: Copying to /etc/rc.local
+    shell: echo "{{ item }}" >> /etc/rc.local
+    with_items:
+      - if test -f /sys/kernel/mm/transparent_hugepage/enabled; then echo never > /sys/kernel/mm/transparent_hugepage/enabled fi
+      - if test -f /sys/kernel/mm/transparent_hugepage/defrag; then echo never > /sys/kernel/mm/transparent_hugepage/defrag fi

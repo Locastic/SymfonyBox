@@ -1,0 +1,6 @@
+---
+- name: Install iptraf
+  yum:
+    enablerepo=remi
+    name=iptraf
+    state=present
