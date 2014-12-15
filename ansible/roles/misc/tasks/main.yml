@@ -5,6 +5,7 @@
 - include: hhvm.yml
 - include: git.yml
 #- include: zsh.yml
+- include: bash.yml
 - include: node.yml
 - include: phpmyadmin.yml
 - include: tmux.yml

@@ -1,0 +1,18 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias getcomposer="curl -sS https://getcomposer.org/installer | php"
+alias pac="php app/console"
+alias pec="php ezpublish/console"
+alias composer="hhvm /usr/local/bin/composer"
+alias dev="php app/console --env=dev"
+alias prod="php app/console --env=prod"
+alias cdv="cd /vagrant"
+
+# VI Mode
+set -o vi
