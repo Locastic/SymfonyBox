@@ -1,4 +1,5 @@
-#Vagrant box built with Ansible for Symfony2 framework
+Vagrant box built with Ansible for Symfony2 framework
+=====================================================
 
 This box was based on Erika Heidi's vagrantee box:
 [link](https://github.com/vagrantee/sandbox-symfony)
@@ -23,25 +24,26 @@ Download and Install Vagrant:
 ## Features
 
 * CentOS 6.5
-* LAMP with PHP 5.4.33
+* PHP 5.4.33
+* MySQL VERSION-HERE
+* Apache VERSION-HERE
 * Composer
 * HHVM
-* Nodejs, NPM, LESS
+* Nodejs
 * ElasticSearch
-* TMUX
 * Blackfire
-* Git
-* Java
-* NodeJs
-* PhpMyAdmin
-* Wget
-* ZSH
-* Cachefilesd
 
 ## Installation
 
     git clone https://github.com/KrunoKnego/SymfonyVagrantAnsibleBox.git
-    vagrant up
+
+## RSYNC
+
+[vagrant-unison](https://github.com/mrdavidlaing/vagrant-unison)
+[vagrant-rsync-back](https://github.com/smerrill/vagrant-rsync-back)
+
+## NFS
+
 
 ## How to start a project
 
@@ -49,6 +51,3 @@ You can easily start a project by running vagrantee.sh script.
 All details can be found on the following 
 [link](https://github.com/vagrantee/sandbox-symfony)
 
-## TODO
-
-* Fix HHVM
