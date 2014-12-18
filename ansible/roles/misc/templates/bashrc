@@ -13,6 +13,7 @@ alias composer="hhvm /usr/local/bin/composer"
 alias dev="php app/console --env=dev"
 alias prod="php app/console --env=prod"
 alias cdv="cd /vagrant"
+alias sfpluginfix="rm -rf /vagrant/app/c;cp -R /srv/cache /vagrant/app/c;"
 
 # VI Mode
 set -o vi
