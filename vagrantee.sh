@@ -45,7 +45,6 @@ if [ "$run_app" != "0" ]; then
             fi
 
             /usr/bin/vagrant "$command"
-            /usr/bin/vagrant "rsync-auto"
 
             exit 1
         else
