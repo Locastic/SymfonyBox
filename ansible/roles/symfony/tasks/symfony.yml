@@ -7,3 +7,6 @@
 
 - name: Changing owner for srv
   shell: chown -R vagrant:vagrant /srv
+
+- name: Preserve owner and group
+  shell: chmod -R g+s /srv
