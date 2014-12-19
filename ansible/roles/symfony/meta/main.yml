@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Kruno Knego
+  description: Role that installs Symfony2 support on CentOS for Vagrant.
+  company: Locastic
+  min_ansible_version: 1.5
+  version: 0.1
+  platforms:
+  - name: CentOS
+    versions:
+    - 6.5
+  categories:
+  - development
+  - system
+dependencies: []

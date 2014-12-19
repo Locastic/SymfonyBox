@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Kruno Knego
+  description: Role that installs miscellaneous utilities. Such as elasticsearch, hhvm, composer, nodejs etc.
+  company: Locastic
+  min_ansible_version: 1.5
+  version: 0.1
+  platforms:
+  - name: CentOS
+    versions:
+    - 6.5
+  categories:
+  - development
+  - system
+dependencies: []
