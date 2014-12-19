@@ -17,7 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--cpus", 2]
   end
 
-  config.vm.synced_folder "./application/kladise", "/vagrant", type: "nfs"
+  config.vm.synced_folder "./application/test.app", "/vagrant", type: "nfs"
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "ansible/playbook.yml"
   end
