@@ -1,0 +1,8 @@
+---
+dependencies:
+- { role: apache }
+- { role: mysql }
+- { role: php }
+- { role: misc }
+- { role: symfony }
+- { role: centos }
