@@ -25,13 +25,14 @@ Download and Install Vagrant:
 
 * CentOS 6.5
 * PHP 5.4.33
-* MySQL VERSION-HERE
-* Apache VERSION-HERE
+* MySQL 5.5.41
+* Apache 2.2.15
 * Composer
 * HHVM
 * Nodejs
 * ElasticSearch
 * Blackfire
+* WKHTMLTOPDF -> at /usr/local/bin/wkhtmltopdf
 
 ## Installation
 
