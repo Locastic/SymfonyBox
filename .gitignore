@@ -3,3 +3,4 @@
 application/*
 !application/test.app
 Vagrantfile.bak
+Vagrantfile
