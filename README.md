@@ -38,11 +38,6 @@ Download and Install Vagrant:
 
     git clone https://github.com/KrunoKnego/SymfonyVagrantAnsibleBox.git
 
-## RSYNC
-
-[vagrant-unison](https://github.com/mrdavidlaing/vagrant-unison)
-[vagrant-rsync-back](https://github.com/smerrill/vagrant-rsync-back)
-
 ## NFS
 
 
