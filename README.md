@@ -47,3 +47,8 @@ You can easily start a project by running vagrantee.sh script.
 All details can be found on the following 
 [link](https://github.com/vagrantee/sandbox-symfony)
 
+## TODO
+
+* Add support for blackfire
+* Add support for capifony
+* Add support for hhv
