@@ -1,3 +1,4 @@
 ---
 - include: symfony.yml
+- include: scripts.yml
 #  - include: blackfire.yml

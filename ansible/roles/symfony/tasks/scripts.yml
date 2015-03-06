@@ -1,0 +1,17 @@
+---
+- name: Add Symfony2 related scripts
+  files:
+    src={{ item.src }}
+    dest={{ item.dest }}
+  with_items:
+    - { src: 'assetic.sh', dest: '/assetic.sh' }
+    - { src: 'sylius_fix.sh', dest: '/sylius_fix.sh' }
+    - { src: 'symlink.sh', dest: '/symlink.sh' }
+  notify: restart apache
+
+- name: Make scripts executable
+  shell: chmod a+x {{ item }}
+  with_items:
+    - /assetic.sh
+    - /sylius_fix.sh
+    - /symlink.sh
