@@ -1,3 +1,4 @@
 ---
+- include: selinux.yml
 - include: apache.yml
 - include: apache_vhosts.yml

@@ -1,0 +1,5 @@
+---
+- name: Ensure libselinux-python is installed
+  yum:
+    name=libselinux-python
+    state=present
