@@ -18,14 +18,16 @@
   with_items:
     - blackfire-agent
 
+# TODO this needs to be interactive
 - name: Blackfire agent register
-  shell: blackfire-agent --register
-
-#SERVER_ID = 5eff5f3b-5d7b-4758-977c-8bd0a0e3332f
-#SERVER_TOKEN = 3e194fe4716a4dc0e5612cc44a7d40a1269752ab49e7815ab818a44ed801f3ec
+  shell: blackfire-agent -register
 
 - name: Blackfire agent restart
-  shell: blackfire-agent restart
+  shell: /etc/init.d/blackfire-agent restart
+
+# TODO this needs to be interactive
+- name: Blackfire config
+  shell: blackfire config
 
 - name: Install Blackfire php
   yum:
@@ -35,4 +37,6 @@
   with_items:
     - blackfire-php
 
-# Restart apache
+#TODO check if possible via handler
+- name: Restart apache
+  shell: service httpd restart

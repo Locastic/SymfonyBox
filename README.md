@@ -51,4 +51,4 @@ All details can be found on the following
 
 * Add support for blackfire
 * Add support for capifony
-* Add support for hhv
+* Fix hhvm and composer

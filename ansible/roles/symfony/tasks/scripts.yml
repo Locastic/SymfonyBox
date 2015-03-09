@@ -1,6 +1,6 @@
 ---
 - name: Add Symfony2 related scripts
-  files:
+  template:
     src={{ item.src }}
     dest={{ item.dest }}
   with_items:
