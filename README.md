@@ -27,11 +27,12 @@ Download and Install Vagrant:
 * PHP 5.4.33
 * MySQL 5.5.41
 * Apache 2.2.15
-* Composer
-* HHVM
+* HHVM + Composer ( work in progress )
 * Nodejs
 * ElasticSearch
-* Blackfire
+* Blackfire ( work in progress )
+* UglifyJS
+* UglifyCSS
 * WKHTMLTOPDF -> at /usr/local/bin/wkhtmltopdf
 
 ## Installation
@@ -50,5 +51,4 @@ All details can be found on the following
 ## TODO
 
 * Add support for blackfire
-* Add support for capifony
 * Fix hhvm and composer
