@@ -1,7 +1,6 @@
 ---
+- name: Install uglifyjs
+  shell: npm install -g uglify-js
 
-name: Install uglifyjs
-shell: npm install -g uglify-js
-
-name: Install uglifycss
-shell: npm install -g uglifycss
+- name: Install uglifycss
+  shell: npm install -g uglifycss
