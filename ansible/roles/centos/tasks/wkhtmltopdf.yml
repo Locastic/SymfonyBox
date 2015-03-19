@@ -2,6 +2,12 @@
 - name: WGET RPM
   command: wget http://sourceforge.net/projects/wkhtmltopdf/files/0.12.2.1/wkhtmltox-0.12.2.1_linux-centos6-amd64.rpm/download
 
-- name: YUM Localinstall whktmltopd
-  command: yum localinstall -y wkhtmltox-0.12.1_linux-centos6-amd64.rpm
+- name: Rename download
+  command: mv download ./wkhtmltopdf.rpm
+
+- name: YUM local install whktmltopd
+  command: yum localinstall -y wkhtmltopdf.rpm
+
+- name: Remove wkhtmltopdf
+  command: rm wkhtmltopdf.rpm
 
