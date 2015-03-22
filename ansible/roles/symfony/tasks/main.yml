@@ -2,5 +2,5 @@
 - include: symfony.yml
 - include: scripts.yml
 - include: uglify.yml
-- inclide: sf_installer.yml
+- include: sf_installer.yml
 #  - include: blackfire.yml
