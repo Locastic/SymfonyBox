@@ -12,6 +12,11 @@ For OSX use Homebrew:
 
     brew update
     brew install ansible
+    
+For Ubuntu:
+    
+    sudo apt-get update
+    sudo apt-get install ansible
 
 For other operating systems check:
 [ansible installation](http://docs.ansible.com/intro_installation.html)
