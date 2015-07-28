@@ -57,4 +57,4 @@ All details can be found on the following
 
 * Add support for blackfire
 * Fix hhvm and composer
-* Add redis
+* Add Xdebug
