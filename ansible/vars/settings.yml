@@ -10,3 +10,5 @@ mysql_root_password: 'root'
 server_hostname: localhost
 
 # root password: puppet
+
+redis: { version: 2.8.8 }
