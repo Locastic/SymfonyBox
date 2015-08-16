@@ -5,3 +5,4 @@
 - include: update.yml
 - include: tune.yml
 - include: wkhtmltopdf.yml
+- include: gcc.yml

@@ -8,9 +8,9 @@
 
   roles:
     - apache
+    - centos
+    - xdebug
     - mysql
-    - php
     - misc
     - symfony
-    - centos
     - redis

@@ -1,0 +1,5 @@
+---
+- name: Ensure gcc is installed
+  yum:
+    name=gcc
+    state=present
