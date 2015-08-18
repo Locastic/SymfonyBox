@@ -1,0 +1,9 @@
+[submodule "ansible/roles/xdebug"]
+	path = ansible/roles/xdebug
+	url = https://github.com/geerlingguy/ansible-role-php-xdebug.git
+[submodule "ansible/roles/php"]
+	path = ansible/roles/php
+	url = https://github.com/geerlingguy/ansible-role-php.git
+[submodule "ansible/roles/geerlingguy.php"]
+	path = ansible/roles/geerlingguy.php
+	url = https://github.com/geerlingguy/ansible-role-php.git

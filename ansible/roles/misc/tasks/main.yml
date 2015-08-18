@@ -11,4 +11,5 @@
 - include: tmux.yml
 - include: vim.yml
 - include: wget.yml
+- include: htop.yml
 #- include: capifony.yml
